@@ -1,5 +1,6 @@
 body {
   background-color: #050608;
+  font-family: Avenir, "Open Sans", "Helvetica Neue", Helvetica, Arial, Verdana, Roboto, "\6E38\30B4\30B7\30C3\30AF", "Yu Gothic", "\6E38\30B4\30B7\30C3\30AF\4F53", "YuGothic", "\30D2\30E9\30AE\30CE\89D2\30B4   Pro W3", "Hiragino Kaku Gothic Pro", "Meiryo UI", "\30E1\30A4\30EA\30AA", Meiryo, "\FF2D\FF33   \FF30\30B4\30B7\30C3\30AF", "MS PGothic", sans-serif;
 }
 #top {
   width: 100%;
@@ -42,15 +43,38 @@ body {
   }
 }
 #concept {
-  background-color: #050608;
-  margin-top: 40px;
-  margin-bottom: 20px;
+  background-image: url(images/concept-back.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #000;
+  width: 100%;
+  padding-bottom: 100px;
+  margin-bottom: 10px;
 }
-#concept h1 {
-  color: #fff;
-  margin-top: 15px;
-  margin-bottom: 15px;
-  margin-left: 15px;
+#concept #concept-box {
+  margin-top: 10%;
+}
+#concept #head {
+  margin-bottom: 2%;
+}
+@media screen and (min-width: 770px) {
+  #concept p {
+    font-size: 28px;
+  }
+}
+@media screen and (min-width: 415px) and (max-width: 769px) {
+  #concept p {
+    font-size: 18px;
+  }
+}
+@media (max-width: 414px) {
+  #concept p {
+    font-size: 10px;
+  }
+}
+#work {
+  padding-bottom: 100px;
+  margin-bottom: 10px;
 }
 #information h1,
 h2,
@@ -79,11 +103,11 @@ td {
   vertical-align: middle;
 }
 #information th {
-  width: 300px;
-  font-size: 24px;
+  width: 30%;
+  font-size: 1em;
   font-weight: bold;
 }
 #infomation td {
-  font-size: 18px;
+  font-size: 18em;
   text-align: left;
 }
