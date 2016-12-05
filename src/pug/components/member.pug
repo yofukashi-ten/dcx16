@@ -1,4 +1,10 @@
 .container#member
   .row.text-center
     .col-xs-12
-      img.center-block.img-responsive(src="images/content-head/member.jpg")
+      img.center-block.img-responsive#head(src="images/content-head/member.jpg")
+  .row.inner_container
+    include member/professor.pug
+  .row.inner_container
+    include member/core_member.pug
+  .row.inner_container
+    include member/other_member.pug
