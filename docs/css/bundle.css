@@ -2,6 +2,9 @@ body {
   background-color: #050608;
   font-family: Avenir, "Open Sans", "Helvetica Neue", Helvetica, Arial, Verdana, Roboto, "\6E38\30B4\30B7\30C3\30AF", "Yu Gothic", "\6E38\30B4\30B7\30C3\30AF\4F53", "YuGothic", "\30D2\30E9\30AE\30CE\89D2\30B4   Pro W3", "Hiragino Kaku Gothic Pro", "Meiryo UI", "\30E1\30A4\30EA\30AA", Meiryo, "\FF2D\FF33   \FF30\30B4\30B7\30C3\30AF", "MS PGothic", sans-serif;
 }
+p {
+  color: #fff;
+}
 #top {
   width: 100%;
   margin-bottom: 0px;
@@ -14,8 +17,8 @@ body {
 }
 .menu {
   background-color: #050608;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 .menu .col-sm-3 {
   border-left: 2px solid #fff;
@@ -35,8 +38,8 @@ body {
     border-right: none;
   }
   .menu .col-xs-6 {
-    margin-top: 5px;
-    margin-bottom: 5px;
+    margin-top: 2px;
+    margin-bottom: 2px;
   }
   .menu .col-xs-6:nth-child(odd) {
     border-right: 2px solid #fff;
@@ -48,6 +51,8 @@ body {
   background-size: cover;
   background-color: #000;
   width: 100%;
+  height: 600px;
+  vertical-align: middle;
   padding-bottom: 100px;
   margin-bottom: 10px;
 }
@@ -72,12 +77,17 @@ body {
     font-size: 10px;
   }
 }
-#work {
-  padding-bottom: 100px;
-  margin-bottom: 10px;
+#works {
+  margin-bottom: 100px;
+}
+#works #head {
+  margin-top: 20px;
+}
+#member {
+  margin-bottom: 100px;
 }
 #member #head {
-  margin-top: 10px;
+  margin-top: 20px;
 }
 #member .row {
   margin-top: 40px;
@@ -86,8 +96,11 @@ body {
   margin-left: 10%;
   margin-right: 10%;
 }
+#member img {
+  margin-bottom: 40px;
+}
 #member h1 {
-  margin-top: 8px;
+  margin-top: 15px;
   margin-bottom: 8px;
   color: #fff;
 }
@@ -101,52 +114,86 @@ body {
 }
 @media screen and (min-width: 415px) and (max-width: 769px) {
   #member h1 {
-    font-size: 22px;
+    font-size: 24px;
   }
   #member p {
-    font-size: 18px;
+    font-size: 20px;
   }
 }
 @media (max-width: 414px) {
   #member h1 {
-    font-size: 22px;
+    font-size: 20px;
   }
   #member p {
+    font-size: 15px;
+  }
+}
+#information {
+  margin-bottom: 60px;
+}
+#information #head {
+  margin-top: 20px;
+}
+#information .row {
+  margin-top: 20px;
+}
+#information .inner_container {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+#information h1 {
+  margin-top: 8px;
+  margin-bottom: 8px;
+  color: #fff;
+}
+.ggmap {
+  position: relative;
+  padding-bottom: 80%;
+  padding-top: 50px;
+  height: 0;
+  overflow: hidden;
+}
+.ggmap iframe,
+.ggmap object,
+.ggmap embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+#information table {
+  margin-bottom: 100px;
+}
+#information td {
+  width: 15%;
+  height: 35px;
+  color: #fff;
+}
+#information tr {
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 770px) {
+  #information td.thead {
+    font-size: 22px;
+  }
+  #information td.tbody {
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 415px) and (max-width: 769px) {
+  #information .thead {
+    font-size: 22px;
+  }
+  #information .tbody {
     font-size: 18px;
   }
 }
-#information h1,
-h2,
-h3,
-h4,
-h5,
-p,
-span,
-th,
-td {
-  color: #fff;
-  margin: 0 0 0 0;
-}
-#information h2 {
-  color: #fff;
-  margin: 30px 30px 30px 0px;
-}
-#information,
-.table>tbody>tr>td,
-.table>tbody>tr>th,
-.table>tfoot>tr>td,
-.table>tfoot>tr>th,
-.table>thead>tr>td,
-.table>thead>tr>th {
-  border-top: none;
-  vertical-align: middle;
-}
-#information th {
-  width: 30%;
-  font-size: 1em;
-  font-weight: bold;
-}
-#infomation td {
-  font-size: 18em;
-  text-align: left;
+@media (max-width: 414px) {
+  #information .thead {
+    font-size: 16px;
+  }
+  #information .tbody {
+    font-size: 14px;
+  }
 }
