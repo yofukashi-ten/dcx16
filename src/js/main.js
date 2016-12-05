@@ -3,6 +3,7 @@ import jQuery from 'jQuery';
 window.$ = $;
 window.jQuery = jQuery;
 
+import Swiper from './vendor/swiper/swiper.min.js'
 
 $(() => {
 
@@ -18,6 +19,13 @@ $(() => {
       }, function (){
         img.attr('src', src_off);
       });
+  });
+
+  var swiper = new Swiper('.swiper-container', {
+    loop: true,
+    pagination: '.swiper-pagination',
+    nextButton: '.swiper-button-next',
+    prevButton: '.swiper-button-prev',
   });
 
 });
