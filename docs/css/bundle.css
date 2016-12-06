@@ -1,3 +1,21 @@
+#page-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+#page-top a {
+  background-image: url(images/top-button-off.png);
+  text-decoration: none;
+  width: 100px;
+  height: 100px;
+  padding: 30px 0;
+  text-align: center;
+  display: block;
+}
+#page-top a:hover {
+  text-decoration: none;
+  background-image: url(images/top-button-on.png);
+}
 body {
   background-color: #050608;
   font-family: Avenir, "Open Sans", "Helvetica Neue", Helvetica, Arial, Verdana, Roboto, "\6E38\30B4\30B7\30C3\30AF", "Yu Gothic", "\6E38\30B4\30B7\30C3\30AF\4F53", "YuGothic", "\30D2\30E9\30AE\30CE\89D2\30B4   Pro W3", "Hiragino Kaku Gothic Pro", "Meiryo UI", "\30E1\30A4\30EA\30AA", Meiryo, "\FF2D\FF33   \FF30\30B4\30B7\30C3\30AF", "MS PGothic", sans-serif;

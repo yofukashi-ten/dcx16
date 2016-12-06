@@ -83,6 +83,25 @@
 	    });
 	  });
 
+	  (0, _jQuery2.default)(".scroll").click(function (event) {
+	    event.preventDefault();
+	    var url = this.href;
+
+	    var parts = url.split("#");
+	    var target = parts[1];
+
+	    var target_offset = (0, _jQuery2.default)("#" + target).offset();
+	    var target_top = target_offset.top;
+
+	    (0, _jQuery2.default)('html, body').animate({ scrollTop: target_top }, 1000);
+	  });
+
+	  var topButton = (0, _jQuery2.default)('#page-top');
+	  topButton.hide();
+	  (0, _jQuery2.default)(window).scroll(function () {
+	    if ((0, _jQuery2.default)(this).scrollTop() > 400) topButton.fadeIn();else topButton.fadeOut();
+	  });
+
 	  var swiper = new _swiperMin2.default('.swiper-container', {
 	    loop: true,
 	    pagination: '.swiper-pagination',
