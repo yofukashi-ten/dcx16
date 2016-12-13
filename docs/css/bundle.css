@@ -54,6 +54,9 @@ p {
   border-left: none;
   border-right: 2px solid #fff;
 }
+.menu .row {
+  height: 0px;
+}
 @media (max-width: 768px) {
   .menu {
     margin-top: 3vh;
