@@ -7,6 +7,8 @@ import Swiper from './vendor/swiper/swiper.min.js'
 
 $(() => {
 
+  $('#top').css('opacity', '1.0');
+
   // ---- 画像のロールオーバー ---- //
   // 画像名には-on, -offが付いていなければならない.
   $('img').each(function (){

@@ -69,6 +69,8 @@
 
 	(0, _jQuery2.default)(function () {
 
+	  (0, _jQuery2.default)('#top').css('opacity', '1.0');
+
 	  // ---- 画像のロールオーバー ---- //
 	  // 画像名には-on, -offが付いていなければならない.
 	  (0, _jQuery2.default)('img').each(function () {
